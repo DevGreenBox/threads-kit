@@ -1,0 +1,28 @@
+# Токены и доступы — НИКОГДА в репозиторий
+.env
+.env.*
+!.env.example
+config/*.json
+!config/*.example.json
+*token*
+!*token*.md
+
+# Живое состояние работы: очереди, журналы, обработанные посты
+state/*
+!state/.gitkeep
+
+# Приватные факты владельца репозитория: свои кейсы, цифры, клиенты
+private/
+evidence/
+*.private.md
+
+# Готовые посты — черновики конкретного человека, не часть инструмента
+generated/*
+!generated/.gitkeep
+!generated/README.md
+!generated/*.example.md
+
+# Мусор
+node_modules/
+.DS_Store
+*.log
